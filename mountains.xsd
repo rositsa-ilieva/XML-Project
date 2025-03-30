@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="catalogue">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mountains" type="mountainListType" />
+                <xs:element name="regions" type="regionListType" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="mountainListType">
+        <xs:sequence>
+            <xs:element name="mountain" type="mountainType" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="mountainType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="description" type="xs:string" />
+            <xs:element name="height" type="xs:integer" />
+            <xs:element name="peak" type="xs:string" />
+            <xs:element name="thumbnail" type="thumbnailType" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required" />
+        <xs:attribute name="region" type="xs:IDREF" use="required" />
+        <xs:attribute name="type" type="xs:string" use="required" />
+        <xs:attribute name="heightCategory" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="thumbnailType">
+        <xs:attribute name="source" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:complexType name="regionListType">
+        <xs:sequence>
+            <xs:element name="region" type="regionType" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="regionType">
+        <xs:sequence>
+            <xs:element name="country" type="xs:string" />
+            <xs:element name="province" type="xs:string" />
+            <xs:element name="city" type="xs:string" />
+            <xs:element name="area" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required" />
+    </xs:complexType>
+</xs:schema>

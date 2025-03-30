@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogue SYSTEM "mountains.dtd">
+<?xml-stylesheet type="text/xsl" href="mountains.xsl"?>
+<catalogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="mountains.xsd">
+    <mountains>
+        <mountain id="mountain0" region="region1" type="&young;" heightCategory="&high;">
+            <name>Рила</name>
+            <description>Рила е най-високата планина в &bulgaria; и на Балканския полуостров.</description>
+            <height>2925</height>
+            <peak>Мусала</peak>
+            <thumbnail source="rila"/>
+        </mountain>
+        <mountain id="mountain1" region="region2" type="&young;" heightCategory="&high;">
+            <name>Пирин</name>
+            <description>Пирин е известна със своите алпийски върхове и красиви езера.</description>
+            <height>2914</height>
+            <peak>Вихрен</peak>
+            <thumbnail source="pirin"/>
+        </mountain>
+        <mountain id="mountain2" region="region3" type="&old;" heightCategory="&medium;">
+            <name>Родопи</name>
+            <description>Родопите са дом на богата флора и фауна. Тя е най-обширната планина в &bulgaria;.</description>
+            <height>2191</height>
+            <peak>Голям Перелик</peak>
+            <thumbnail source="rodopi"/>
+        </mountain>
+        <mountain id="mountain3" region="region4" type="&old;" heightCategory="&high;">
+            <name>Стара планина</name>
+            <description>Стара планина разделя страната на Северна и Южна &bulgaria;.</description>
+            <height>2376</height>
+            <peak>Ботев</peak>
+            <thumbnail source="stara-planina"/>
+        </mountain>
+        <mountain id="mountain4" region="region5" type="&old;" heightCategory="&medium;">
+            <name>Осоговска планина</name>
+            <description>Осоговската планина се намира на границата между &bulgaria; и Северна Македония.</description>
+            <height>2251</height>
+            <peak>Руен</peak>
+            <thumbnail source="osogovska"/>
+        </mountain>
+        <mountain id="mountain5" region="region6" type="&young;" heightCategory="&high;">
+            <name>Беласица</name>
+            <description>Беласица е известна с разнообразната си природа и граничното си местоположение.</description>
+            <height>2029</height>
+            <peak>Радомир</peak>
+            <thumbnail source="belasitsa"/>
+        </mountain>
+        <mountain id="mountain6" region="region7" type="&old;" heightCategory="&medium;">
+            <name>Витоша</name>
+            <description>Витоша е планината в непосредствена близост до София.</description>
+            <height>2290</height>
+            <peak>Черни връх</peak>
+            <thumbnail source="vitosha"/>
+        </mountain>
+        <mountain id="mountain7" region="region8" type="&old;" heightCategory="&medium;">
+            <name>Славянка</name>
+            <description>Славянка е малка, но красива планина в Южна &bulgaria;.</description>
+            <height>2212</height>
+            <peak>Гоцев връх</peak>
+            <thumbnail source="slavyanka"/>
+        </mountain>
+    </mountains>
+</catalogue>

@@ -1,0 +1,48 @@
+<!ATTLIST catalogue
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+
+<!ELEMENT catalogue (mountains, regions)>
+<!ELEMENT mountains (mountain+)>
+<!ELEMENT mountain (name, description, height, peak, thumbnail)>
+<!ATTLIST mountain
+    id ID #REQUIRED
+    region IDREF #REQUIRED
+    type CDATA #REQUIRED
+    heightCategory CDATA #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT peak (#PCDATA)>
+<!ELEMENT thumbnail EMPTY>
+<!ATTLIST thumbnail source CDATA #REQUIRED>
+
+<!ELEMENT regions (region+)>
+<!ELEMENT region (country, province, city, area)>
+<!ATTLIST region
+    id ID #REQUIRED>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT province (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT area (#PCDATA)>
+
+<!NOTATION jpeg SYSTEM "image/jpeg">
+<!ENTITY rila PUBLIC "rila" "https://i.postimg.cc/MGCgBMmX/rila.jpg" NDATA jpeg>
+<!ENTITY pirin PUBLIC "pirin" "https://i.postimg.cc/cCZjDpjS/pirin.jpg" NDATA jpeg>
+<!ENTITY rodopi PUBLIC "rodopi" "https://i.postimg.cc/4dpqQfWP/rodopi.jpg" NDATA jpeg>
+<!ENTITY stara-planina PUBLIC "stara-planina" "https://i.postimg.cc/MHDLgs2j/stara-planina.jpg" NDATA jpeg>
+<!ENTITY osogovska PUBLIC "osogovska" "https://i.postimg.cc/c1MPKJg4/osogovska.jpg" NDATA jpeg>
+<!ENTITY belasitsa PUBLIC "belasitsa" "https://i.postimg.cc/s2Qt19St/belasitsa.jpg" NDATA jpeg>
+<!ENTITY vitosha PUBLIC "vitosha" "https://i.postimg.cc/8CMtqyLP/vitosha.jpg" NDATA jpeg>
+<!ENTITY slavyanka PUBLIC "slavyanka" "https://i.postimg.cc/pTBkdp0w/slavyanka.jpg" NDATA jpeg>
+
+<!ENTITY bulgaria "България">
+<!ENTITY young "младонагъната">
+<!ENTITY old "старонагъната">
+<!ENTITY high "висока">
+<!ENTITY medium "средно-висока">
+<!ENTITY sw "Югозападен">
+<!ENTITY sc "Южен централен">
+<!ENTITY nc "Северен централен">
+
