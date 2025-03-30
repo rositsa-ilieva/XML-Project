@@ -1,4 +1,4 @@
-#XML-Project
+# XML-Project
 This repository contains my coursework for the XML course. The project focuses on well-structured XML documents,hierarchy, syntax rules, and namespaces.
 
 Features:
